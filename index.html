@@ -1,11 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> animacion</title>
-    <link rel="stylesheet" href="./stylesheet/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Bootstrap</title>
+  <link rel="stylesheet" href="./stylesheet/bootstrap.css">
+  <link rel="stylesheet" href="./stylesheet/menù.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./stylesheet/slider.css">
+  <link rel="stylesheet" href="./stylesheet/cards.css">
+  <link rel="stylesheet" href="./stylesheet/importante.css">
+  <link rel="stylesheet" href="./stylesheet/elegirnos.css">
+  <style>
+    /* Espaciado entre secciones */
+    .espacio-seccion {
+      margin-top: 100px;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="cuadrado"></div>
+    <!-- MENÚ (sin margen) -->
+    <nav class="navbar navbar-expand-lg nombre">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/iconos/logo.svg" alt="Logo" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./images/iconos/iconos-tuprimero_Mesa de trabajo 1 copia 2 1.svg" alt="Menú" width="50" height="50">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CUIDÁNDOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">¡CONTÁCTANOS!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER (sin margen) -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slider 1 -->
+            <div class="swiper-slide">
+                <img src="./images/fondo.jpg" alt="Imagen Slider 1">
+                <div class="slider-text">
+                    <h2>Consultora de Psicología</h2>
+                    <h1>TÚ <span class="resaltado1">PRIMERO</span></h1>
+                    <p>Te ayudamos a alcanzar tu <span class="resaltado2">bienestar integral</span>, conectando contigo desde una perspectiva humana y profesional.</p>
+                    <button class="btn">Contáctanos</button>
+                </div>
+            </div>
+
+            <!-- Slider 2 -->
+            <div class="swiper-slide">
+                <img src="./images/slider2.png" alt="Imagen Slider 2">
+                <div class="slider-text-2">
+                    <h2>Te sientes...</h2>
+                    <h1>BIEN?</h1>
+                    <p>Te acompañamos en <span class="resaltado2">tú sanación</span></p>
+                </div>
+            </div>
+
+            <!-- Slider 3 -->
+            <div class="swiper-slide">
+                <img src="./images/slider3.png" alt="Imagen Slider 3">
+                <div class="slider-text-2">
+                    <h2>El dolor de cabeza no te deja</h2>
+                    <h1>DESCANSAR?</h1>
+                    <p>La causa puede ser el <span class="resaltado2">estrés</span>, aprende a manejarlo con nosotros.</p>
+                </div>
+            </div>
+
+            <!-- Slider 4 -->
+            <div class="swiper-slide">
+                <img src="./images/slider4.png" alt="Imagen Slider 4">
+                <div class="slider-text-2">
+                    <h2>El primer paso es pedir</h2>
+                    <h1>AYUDA</h1>
+                    <p><span class="resaltado2">"Tú Primero"</span> está para guiarte en tu proceso.</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <!-- SECCIÓN PROBLEMAS RECURRENTES (con margen) -->
+    <section class="problemas-recurrentes container-custom text-center espacio-seccion">
+        <h2>Problemas <span class="resaltado">RECURRENTES</span></h2>
+        <p>Dificultades frecuentes por las cuales nuestros pacientes recurren a nuestros servicios de atención</p>
+
+        <div class="row row-custom justify-content-center">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3>Superar una <br> <span class="resaltado">ruptura amorosa</span></h3>
+                    <p class="card-text">Aceptar la pérdida, lidiar con el dolor y reconstruir la propia vida. Requiere tiempo, autocompasión y el aprendizaje de vivir sin la otra persona.</p>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3>Problemas de <span class="resaltado">estrés <br> e insomnio</span></h3>
+                    <p class="card-text">El estrés prolongado puede dificultar el descanso adecuado y el insomnio, agrava el agotamiento físico y mental, creando un ciclo difícil de romper.</p>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3>Superación de un <br> <span class="resaltado">fallecimiento</span></h3>
+                    <p class="card-text">Proceso personal y emocional, que implica aprender a vivir con la ausencia de un ser querido que puede incluir etapas como la negación, la ira, la tristeza.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="terapia-section">
+        <div class="highlight">
+            <span>¿¡IMPORTANTE?!</span>
+        </div>
+        <div class="content-box">
+            <h2>Terapia <span class="highlight-text">PSICOLÓGICA</span></h2>
+            <p>
+                Puede ayudarte a superar bloqueos emocionales y desarrollar estrategias que permitan 
+                <span class="highlight-text">afrontar tu presente o futuro</span> así definir tus metas, 
+                aclarando quién eres y qué quieres de la vida.
+            </p>
+            <p>
+                Los terapeutas te pueden ayudar a <span class="highlight-text">encontrar el problema de raíz</span> 
+                y realizar un cambio permanente en tu vida.
+            </p>
+        </div>
+    </section>
+    <!-- SECCIÓN POR QUÉ ELEGIRNOS (con margen) -->
+    <section class="elegirnos-section container-custom text-center espacio-seccion">
+        <div class="content-box">
+            <h2>¿Por qué <span class="highlight-text">ELEGIRNOS?</span></h2>
+            <p>Nuestra atención es inmediata y eficiente, con los resultados permanentes que nos caracterizan</p>
+            <p><strong>¡Vamos a atenderte <span class="highlight-text">inmediatamente</span>!</strong></p>
+        </div>
+        <div class="image-box">
+            <img src="./images/elegirnos.jpg" alt="Sesión grupal" class="rounded-image">
+        </div>
+    </section>
+
+    <!-- SECCIÓN TERAPIAS MÁS SOLICITADAS (con margen) -->
+    <section class="container-fluid py-5 bg-light espacio-seccion">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-4">
+                <h2>Terapias más <span class="highlight">SOLICITADAS</span></h2>
+            </div>
+            <div class="col-md-5 mb-3">
+                <div class="image-placeholder bg-secondary">Imagen de Terapia Individual</div>
+                <h4 class="text-center mt-2">Terapia Individual</h4>
+            </div>
+            <div class="col-md-5 mb-3">
+                <div class="image-placeholder bg-secondary">Imagen de Terapia de Pareja</div>
+                <h4 class="text-center mt-2">Terapia de Pareja</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ESTADÍSTICAS (con margen) -->
+    <section class="container-fluid py-5 espacio-seccion">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h2>82%</h2>
+                <p>de los pacientes han alcanzado sus metas</p>
+            </div>
+            <div class="col-md-4">
+                <h2>97%</h2>
+                <p>de los pacientes recomendaría nuestras terapias</p>
+            </div>
+            <div class="col-md-4">
+                <h2>43%</h2>
+                <p>de los pacientes llevan más de 1 año con nosotros</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MASCOTA FREELY (con margen) -->
+    <section class="container-fluid py-5 bg-light text-center espacio-seccion">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2>¡Hola! Soy <span class="highlight">Freely</span></h2>
+                <p>Tu guía de bienestar</p>
+                <img src="./images/freely.jpg" alt="Mascota Freely" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (con margen) -->
+    <footer class="container-fluid text-center py-4 footer-custom espacio-seccion">
+        <p>&copy; 2024 Consultora Tú Primero. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
+</html>
