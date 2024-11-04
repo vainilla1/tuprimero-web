@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Estilos Generales */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  background: #f7f2f7;
+}
+
+/* Menú */
+.navbar-nav .nav-link {
+  color: #5C5C5C;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #eeb3b8; /* Color al pasar el mouse */
+}
+
+.navbar-nav .nav-link.active {
+  color: #ff4655; /* Color de la página activa */
+}
+
+/* Estructura de la Página usando Grid */
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr; /* Menú ocupa la primera fila, el slider la segunda */
+  height: 100vh; /* La estructura ocupa toda la altura de la ventana */
+  position: relative;
+}
+
+/* Menú superpuesto encima del Slider */
+nav {
+  grid-row: 1 / 2;
+  z-index: 10; /* Coloca el menú encima del slider */
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+}
+
+/* Estilos para la Primera Diapositiva del Slider */
+.swiper-slide-1 {
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+

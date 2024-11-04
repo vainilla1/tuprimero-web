@@ -1,0 +1,68 @@
+.elegirnos-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre el texto y la imagen */
+    padding: 40px;
+}
+
+/* Caja de contenido */
+.content-box {
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+}
+
+.content-box h2 {
+    font-weight: bold;
+    color: #555;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.highlight-text {
+    color: #E52344;
+    font-weight: bold;
+}
+
+.content-box p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Estilos de la imagen */
+.image-box img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Espacio entre secciones */
+.espacio-seccion {
+    margin-bottom: 100px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .elegirnos-section {
+        flex-direction: column; /* Apila el cuadro de texto y la imagen verticalmente */
+        text-align: center;
+        padding: 20px; /* Reduce el padding en móviles */
+    }
+
+    .content-box {
+        max-width: 100%; /* Ocupa todo el ancho en móviles */
+        text-align: center; /* Centra el texto */
+        padding: 20px ; /* Ajusta el padding para pantallas pequeñas */
+        margin: 20px 0 40px 0
+    }
+
+    .image-box img {
+        max-width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+}
