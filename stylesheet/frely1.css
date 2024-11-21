@@ -1,0 +1,22 @@
+.mascota-freely {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Espacio entre el texto y la imagen */
+    padding: 40px;
+}
+
+.mascota-freely .titulo-mascota {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700px;
+    font-size: 48px;
+    color: #555;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.mascota-freely .freely-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}

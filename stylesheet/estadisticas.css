@@ -1,0 +1,33 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+}
+
+.estadisticas {
+    color: #333;
+}
+
+.stat-item {
+    margin: 20px 0;
+}
+
+.stat-number {
+    font-size: 90px;
+    color: #e63946; /* Rosa */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+}
+
+.stat-description {
+    font-size: 16px;
+    color: #888888; /* Color gris claro */
+    font-weight: 400;
+    margin: 0;
+}

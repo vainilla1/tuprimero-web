@@ -61,7 +61,7 @@
         max-width: 100%; /* Asegura que el cuadro de contenido ocupe todo el ancho */
         padding: 50px; /* Ajusta el padding para pantallas pequeñas */
         text-align: center; /* Centra el texto */
-        margin: 20px 0 100px 0;
+        margin: 20px 0 100px 0; 
     }
 
     .content-box h2 {
